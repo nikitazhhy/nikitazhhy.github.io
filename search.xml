@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>ETF估值每周更新</title>
+      <link href="/2019/08/26/2019-08-26-ETF%E4%BC%B0%E5%80%BC%E6%AF%8F%E5%91%A8%E6%9B%B4%E6%96%B0/"/>
+      <url>/2019/08/26/2019-08-26-ETF%E4%BC%B0%E5%80%BC%E6%AF%8F%E5%91%A8%E6%9B%B4%E6%96%B0/</url>
+      
+        <content type="html"><![CDATA[<p>目前joinquant上的估值模板还没时间迁移到米筐上，先用之前的测算一遍最新的估值如下： </p><a id="more"></a><p><img src="/images/20190826-1.png" alt></p><p><img src="/images/20190826-2.png" alt></p><p><img src="/images/20190826-3.png" alt></p><p>从指数ETF上看，<strong>300和500</strong>估值已经很低了，当然最近也没起来，现在随时等盘面暴跌逢低建仓就是了，50其实之前大家一直看好，但是成分股已经涨提高的了，在目前大环境这么差的情况下，下手还是要稳妥一点儿，不暴跌还是不要进50了。</p><p>其他的一些比较小众的指数ETF后续是要测算一下相关性的，流动性差，相关性高的可以直接剔除了，免得重复分析，浪费时间也没效果。</p><p>从行业ETF来看，金融、医药也是基金扎堆的地方，估值都上来了，有些其实比起15年的时候甚至更贵，捡便宜的机会也不是很多，目前来看<strong>中小盘的医药和金融ETF</strong>还有些机会，看盘面给不给机会建仓。</p><p>题材类的ETF不多，流动性也不是很好，目前看到的<strong>价值类ETF</strong>还是低估，待后续测算下每个ETF成分股是否健康再定要不要纳入备选建仓品种。</p><p>目前能够实盘验证出的ETF交易心得与分析框架是：</p><ol><li>ETFPE估值（等权重）初选</li><li>备选ETF成分股分析</li><li>计算各个ETF建仓比例4.</li><li>技术分析盘面寻找建仓机会</li><li>百分比止损or估值修复止盈</li></ol><p>今后的分析与交易日记也会尽量按这个体系来逐步完善。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> ETF </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> ETF估值 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>CTA策略更新与汇总</title>
       <link href="/2019/08/25/2019-08-25-CTA%E7%AD%96%E7%95%A5%E6%9B%B4%E6%96%B0%E4%B8%8E%E6%B1%87%E6%80%BB/"/>
       <url>/2019/08/25/2019-08-25-CTA%E7%AD%96%E7%95%A5%E6%9B%B4%E6%96%B0%E4%B8%8E%E6%B1%87%E6%80%BB/</url>
