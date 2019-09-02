@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>米筐实盘客户端</title>
+      <link href="/2019/09/02/2019-09-02-RQPro/"/>
+      <url>/2019/09/02/2019-09-02-RQPro/</url>
+      
+        <content type="html"><![CDATA[<p>上个礼拜折腾着将rqpro开了实盘，这个月努力测试下实盘API，准备尽快将策略上线。</p><p>大部分的api跟模拟交易的差不多，最重要的仓位函数果然被改掉了，看来大家都知道仓位控制是个重头戏。</p><p>点名批评下rqpro客户端的字体太小了，根本没办法直接在上面愉快的撸代码，还好他们给了个替代方案，可以将pycharm连接上客户端，方便调试，也算是曲线救国了。</p><p><img src="/images/20190902.png" alt></p><p>这么小的字是让我练视力吗？ </p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 期货CTA </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 米筐客户端 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>元盛与千象</title>
       <link href="/2019/09/01/2019-09-01-%E5%85%83%E7%9B%9B%E4%B8%8E%E5%8D%83%E8%B1%A1/"/>
       <url>/2019/09/01/2019-09-01-%E5%85%83%E7%9B%9B%E4%B8%8E%E5%8D%83%E8%B1%A1/</url>
