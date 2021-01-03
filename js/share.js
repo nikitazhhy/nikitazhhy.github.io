@@ -1,75 +1,60 @@
+(function($){
 
-function generate(url, opts) {
-  var url = url.replace(/<%-sUrl%>/g, encodeURIComponent(opts.sUrl))
-    .replace(/<%-sTitle%>/g, opts.sTitle)
-    .replace(/<%-sDesc%>/g, opts.sDesc)
-    .replace(/<%-sPic%>/g, encodeURIComponent(opts.sPic));
+  // article-share
+  $('body').on('click', function(){
+    $('.article-share-box.on').removeClass('on');
+  }).on('click', '.article-share-link', function(e){
+    e.stopPropagation();
 
-  window.open(url);
-}
+    var $this = $(this),
+      url = $this.attr('data-url'),
+      qrcode_img = $this.attr('data-qrcode'),
+      encodedUrl = encodeURIComponent(url),
+      id = 'article-share-box-' + $this.attr('data-id'),
+      title = document.title,
+      offset = $this.offset();
 
-function showWX() {
-  let $wx = $('.wx-share-modal')
-  let $mask = $('#share-mask')
-  $wx.addClass('in')
-  $wx.addClass('ready')
-  $mask.show()
-}
+    if ($('#' + id).length){
+      var box = $('#' + id);
 
-function hideWX() {
-  let $wx = $('.wx-share-modal')
-  let $mask = $('#share-mask')
-  $wx.removeClass('in')
-  $wx.removeClass('ready')
-  $mask.hide()
-}
+      if (box.hasClass('on')){
+        box.removeClass('on');
+        return;
+      }
+    } else {
+      var html = [
+        '<div id="' + id + '" class="article-share-box">',
+          '<input class="article-share-input" value="' + url + '">',
+          '<div class="article-share-links">',
+            '<a href="//twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+            '<a href="//www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+            '<a href="//service.weibo.com/share/share.php?title=' + title + '&url=' + encodedUrl + '&searchPic=true&style=number' + '" class="article-share-weibo" target="_blank" title="Weibo"></a>',
+            '<a href="' + qrcode_img + '" class="article-share-qrcode" target="_blank" title="QR code"></a>',
+            '<div class="qrcode"><img src=' + qrcode_img + '></div>',
+          '</div>',
+        '</div>'
+      ].join('');
 
-function handleClick(type, opts) {
-  if (type === 'weibo') {
-    generate('http://service.weibo.com/share/share.php?url=<%-sUrl%>&title=<%-sTitle%>&pic=<%-sPic%>', opts)
-  } else if (type === 'qq') {
-    generate('http://connect.qq.com/widget/shareqq/index.html?url=<%-sUrl%>&title=<%-sTitle%>&source=<%-sDesc%>', opts)
-  } else if (type === 'douban') {
-    generate('https://www.douban.com/share/service?image=<%-sPic%>&href=<%-sUrl%>&name=<%-sTitle%>&text=<%-sDesc%>', opts)
-  } else if (type === 'qzone') {
-    generate('http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=<%-sUrl%>&title=<%-sTitle%>&pics=<%-sPic%>&summary=<%-sDesc%>', opts)
-  } else if (type === 'facebook') {
-    generate('https://www.facebook.com/sharer/sharer.php?u=<%-sUrl%>', opts)
-  } else if (type === 'twitter') {
-    generate('https://twitter.com/intent/tweet?text=<%-sTitle%>&url=<%-sUrl%>&via=<%-config.url%>', opts)
-  } else if (type === 'google') {
-    generate('https://plus.google.com/share?url=<%-sUrl%>', opts)
-  } else if (type === 'weixin') {
-    showWX();
-  }
-}
+      var box = $(html);
 
-let init = function () {
-  let $sns = document.querySelectorAll('.share-sns');
-  if (!$sns || $sns.length === 0) return;
-
-  let sUrl = window.location.href;
-  let sTitle = document.querySelector('title').innerHTML;
-  let $img = document.querySelectorAll('.article-entry img');
-  let sPic = $img.length ? document.querySelector('.article-entry img').getAttribute('src') : '';
-  if ((sPic !== '') && !/^(http:|https:)?\/\//.test(sPic)) {
-    sPic = window.location.origin + sPic
-  }
-
-  $sns.forEach(($em) => {
-    $em.onclick = (e) => {
-      let type = $em.getAttribute('data-type')
-      handleClick(type, {
-        sUrl: sUrl,
-        sPic: sPic,
-        sTitle: sTitle,
-        sDesc: sTitle
-      })
+      $('body').append(box);
     }
-  })
 
-  document.querySelector('#mask').onclick = hideWX
-  document.querySelector('.modal-close').onclick = hideWX
-}
+    $('.article-share-box.on').hide();
 
-init()
+    box.css({
+      top: offset.top + 25,
+      left: offset.left
+    }).addClass('on');
+  }).on('click', '.article-share-box', function(e){
+    e.stopPropagation();
+  }).on('click', '.article-share-box-input', function(){
+    $(this).select();
+  }).on('click', '.article-share-box-link', function(e){
+    e.preventDefault();
+    e.stopPropagation();
+
+    window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+  });
+
+})(jQuery);
