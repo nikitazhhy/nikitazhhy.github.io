@@ -4,11 +4,36 @@
   
     
     <entry>
-      <title>Hello World</title>
-      <link href="/2025/08/12/hello-world/"/>
-      <url>/2025/08/12/hello-world/</url>
+      <title>大的框架</title>
+      <link href="/2025/08/16/2025-08-16-%E5%A4%A7%E7%9A%84%E6%A1%86%E6%9E%B6/"/>
+      <url>/2025/08/16/2025-08-16-%E5%A4%A7%E7%9A%84%E6%A1%86%E6%9E%B6/</url>
       
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><span id="more"></span><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+        <content type="html"><![CDATA[<p>每当策略没有什么太大进展的时候，我的一个潜意识的习惯就是重新整理一下策略研发的框架，让自己安静下来，看看这个策略大拼图，还有哪些没有完成。</p><span id="more"></span><p>研发的大致流程如下，当然在实际的研发过程中，还是有很多的可操作空间的，不必拘泥于文字上的描述，按照实际情况灵活变通即可。<br><img src="/./2025-08-16-%E5%A4%A7%E7%9A%84%E6%A1%86%E6%9E%B6/%E9%87%8F%E5%8C%96%E7%A0%94%E5%8F%91%E6%A1%86%E6%9E%B6.jpg" alt="量化研发框架"></p><p>策略的一些简单大纲如下，还是要根据实际的研发情况来进行调整<br><img src="/./2025-08-16-%E5%A4%A7%E7%9A%84%E6%A1%86%E6%9E%B6/%E9%87%8F%E5%8C%96%E7%AD%96%E7%95%A5%E7%A0%94%E5%8F%91%E5%A4%A7%E7%BA%B2.jpg" alt="量化策略大纲"></p><p>这个行业注定是一场持久的研发变现的过程，其中的烧脑环节比比皆是。<br>慢慢烧吧。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 策略 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 框架 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>整理</title>
+      <link href="/2025/08/14/2025-08-14-%E6%95%B4%E7%90%86/"/>
+      <url>/2025/08/14/2025-08-14-%E6%95%B4%E7%90%86/</url>
+      
+        <content type="html"><![CDATA[<p>最近的思绪总是有些烦乱，需要好好整理一下。</p><p>这个blog框架删了又改回来，反反复复弄了好几遍，最后想想还是留一块地方，可以专心的用来写字。</p><span id="more"></span><p>今年刚好是本命年，活得也越来越简单，简单的生活轨迹，简单的生活习惯，简单的人际关系，简简单单的自己。</p>]]></content>
       
       
       <categories>
@@ -20,7 +45,7 @@
       
         <tags>
             
-            <tag> 开篇 </tag>
+            <tag> 日常 </tag>
             
         </tags>
       
